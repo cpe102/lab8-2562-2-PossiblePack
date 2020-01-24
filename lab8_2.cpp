@@ -4,12 +4,13 @@ using namespace std;
 char printO(int a,int b){
 	if(a <=0 || b <=0){
 		cout << "Invalid input\n";
-	}
-	for(int i=0; i<a ;i++){
+	}else{
+		for(int i=0; i<a ;i++){
 			for(int j=0; j<b; j++){
 			cout << 'O';
 		}
 		cout << "\n";
+		}
 	}
 }
 
@@ -28,7 +29,10 @@ int main(){
 	cout << "\n";	
 	
 	printO(7,-1);
-	cout << "\n";	
+	cout << "\n";
+
+	printO(7, 0);
+	cout << "\n";
 	
 	return 0;
 }
